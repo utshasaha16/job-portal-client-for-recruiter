@@ -36,7 +36,7 @@ const AddJob = () => {
                         showConfirmButton: false,
                         timer: 1500
                     });
-                    navigate('/myApplications')
+                    navigate('/myPostedJobs')
                 }
             })
     }
@@ -146,6 +146,13 @@ const AddJob = () => {
                         <span className="label-text">HR Email</span>
                     </label>
                     <input type="text" defaultValue={user?.email} name='hr_email' placeholder="HR Email" className="input input-bordered" required />
+                </div>
+                {/* application Deadline */}
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Deadline</span>
+                    </label>
+                    <input type="date" name='applicationDeadline' placeholder="Deadline" className="input input-bordered" required />
                 </div>
                 {/* HR Name */}
                 <div className="form-control">
